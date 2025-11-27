@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu da Pesquisa</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+
+        /* Fundo animado estilo sorveteria */
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            background: linear-gradient(135deg, #ffe4f1, #ffd8b5, #c6e6ff);
+            background-size: 300% 300%;
+            animation: fundo 10s ease infinite;
+        }
+
+        @keyframes fundo {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Card central */
+        .card {
+            max-width: 800px; 
+            margin: auto;
+            margin-top: 70px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.20);
+            animation: zoom 0.5s;
+        }
+
+        @keyframes zoom {
+            from { transform: scale(0.9); opacity: 0; }
+            to   { transform: scale(1); opacity: 1; }
+        }
+
+        /* Título */
+        h2 {
+            font-size: 40px;
+            color: #ff5faf;
+            text-shadow: 
+                2px 2px #ffffff,
+                4px 4px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background: #ffb3d9;
+            width: 60%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Botões estilo sorvete */
+        .btn-sorvete {
+            display: block;
+            padding: 18px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 15px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            transition: 0.3s;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .btn-cadastro {
+            background: #ff85c2;
+        }
+        .btn-cadastro:hover {
+            background: #ff4fa3;
+            transform: scale(1.05);
+        }
+
+        .btn-listar {
+            background: #8ab9ff;
+        }
+        .btn-listar:hover {
+            background: #5e97ff;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h2 class="w3-center">🍨 Menu da Pesquisa 🍦</h2>
+    <hr>
+
+    <a href="Cadastro.html" class="btn-sorvete btn-cadastro">
+       ➕ Cadastrar Pesquisa
+    </a>
+
+    <a href="Listar.jsp" class="btn-sorvete btn-listar">
+       📄 Listar Pesquisas
+    </a>
+
+</div>
+
+</body>
+</html>
